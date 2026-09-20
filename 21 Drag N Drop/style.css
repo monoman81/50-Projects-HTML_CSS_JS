@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --mainFont: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+    background-color: steelblue;
+    font-family: var(--mainFont);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 3px solid #000;
+    background-color: #fff;
+}
+
+.fill {
+    background-image: url("https://picsum.photos/150");
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.hold {
+    border: 5px solid #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border: 3px dashed #fff;
+}
